@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " d ",
+    " s ",
+    " s "
+  ],
+  "key": {
+    "d": {
+      "item": "se1:diamond_plate"
+    },
+    "s": {
+      "item": "se1:reinforced_stick"
+    }
+  },
+  "result": {
+    "item": "se1:diamond_spade",
+    "count": 1
+  }
+}
