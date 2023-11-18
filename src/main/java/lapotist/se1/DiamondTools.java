@@ -8,7 +8,7 @@ public class DiamondTools implements ToolMaterial {
     public static final DiamondTools INSTANCE = new DiamondTools();
     @Override
     public int getDurability() {
-        return 1000;
+        return 2000;
     }
 
     @Override
@@ -18,7 +18,7 @@ public class DiamondTools implements ToolMaterial {
 
     @Override
     public float getAttackDamage() {
-        return 200F;
+        return 0F;
     }
 
     @Override
