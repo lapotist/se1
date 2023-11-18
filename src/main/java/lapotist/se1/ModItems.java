@@ -18,7 +18,7 @@ public class ModItems {
     }
 
     public static final Item DIAMOND_SPADE = register(
-            new ShovelItem(DiamondTools.INSTANCE, 3F, 10.0F, new FabricItemSettings()),
+            new ShovelItem(DiamondTools.INSTANCE, 2F, 10.0F, new FabricItemSettings()),
             "diamond_spade");
 
 
