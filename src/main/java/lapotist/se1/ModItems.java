@@ -1,7 +1,10 @@
 package lapotist.se1;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroups;
+import net.minecraft.item.ShovelItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -11,23 +14,22 @@ public class ModItems {
         // Create the identifier for the item.
         Identifier itemID = new Identifier("se1", ID);
 
-        // Register the item.
-        T registeredItem = Registry.register(Registries.ITEM, itemID, item);
-
         // Return the registered item!
-        return registeredItem;
+        return Registry.register(Registries.ITEM, itemID, item);
     }
 
     public static final Item DIAMOND_SPADE = register(
-            new Item(new FabricItemSettings()),
-            "diamond_spade"
-    );
+            new ShovelItem(DiamondTools.INSTANCE, 2000.0F, 100.0F, new FabricItemSettings()),
+            "diamond_spade");
+
 
     public static final Item DIAMOND_PLATE = register(
             new Item(new FabricItemSettings()),
             "diamond_plate");
 
     public static void initialize() {
-
+        ItemGroupEvents
+                .modifyEntriesEvent(ItemGroups.TOOLS)
+                .register((itemGroup) -> itemGroup.add(ModItems.DIAMOND_SPADE));
     }
 }

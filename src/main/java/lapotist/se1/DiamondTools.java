@@ -1,29 +1,29 @@
 package lapotist.se1;
 
-import net.fabricmc.fabric.impl.lookup.item.ItemApiLookupImpl;
-import net.minecraft.item.MinecartItem;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
 public class DiamondTools implements ToolMaterial {
+
+    public static final DiamondTools INSTANCE = new DiamondTools();
     @Override
     public int getDurability() {
-        return 455;
+        return 1000;
     }
 
     @Override
     public float getMiningSpeedMultiplier() {
-        return 0;
+        return 20F;
     }
 
     @Override
     public float getAttackDamage() {
-        return 0;
+        return 200F;
     }
 
     @Override
     public int getMiningLevel() {
-        return 0;
+        return 1;
     }
 
     @Override
