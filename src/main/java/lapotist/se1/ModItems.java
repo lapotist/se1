@@ -29,7 +29,7 @@ public class ModItems {
             "diamond_plate");
 
     public static final Item DIAMOND_KNIFE = register(
-            new SwordItem(DiamondTools.INSTANCE,14 , 10.0F, new FabricItemSettings()),
+            new SwordItem(DiamondTools.INSTANCE,15 , 15.0F, new FabricItemSettings()),
             "diamond_knife");
 
     public static void AddToTools(Item item) {
