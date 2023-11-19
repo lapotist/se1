@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ppp",
+    "ppp",
+    "ppp"
+  ],
+  "key": {
+    "p": {
+      "item": "se1:diamond_plate"
+    }
+  },
+  "result": {
+    "item": "se1:hardened_diamond_plate",
+    "count": 1
+  }
+}

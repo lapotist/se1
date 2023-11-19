@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " p ",
+    " p ",
+    " s "
+  ],
+  "key": {
+    "p": {
+      "item": "se1:hardened_diamond_plate"
+    },
+    "s": {
+      "item": "se1:diamond_knife"
+    }
+  },
+  "result": {
+    "item": "se1:diamond_longsword",
+    "count": 1
+  }
+}
